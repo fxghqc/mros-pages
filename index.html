@@ -3,14 +3,14 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Foundation</title>
+    <title>MRO</title>
     <link rel="stylesheet" href="css/app.css" />
     <script src="bower_components/modernizr/modernizr.js"></script>
   </head>
   <body>
     <div class="row">
       <div class="large-12 columns">
-        <h1>Welcome to Foundation</h1>
+        <h1>MRO平台</h1>
       </div>
     </div>
 
@@ -79,33 +79,22 @@
 
         <hr />
 
-        <h5>We bet you&rsquo;ll need a form somewhere:</h5>
+        <h5>登录:</h5>
         <form>
           <div class="row">
-            <div class="large-12 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-12.columns" />
+            <div class="large-6 columns">
+              <label for="login_name" id="lable_login_name">用户名</label>
+            </div>
+            <div class="large-6 columns">
+              <input type="text" placeholder="请输入您的用户名" name="login_name" id="login_name"/>
             </div>
           </div>
           <div class="row">
-            <div class="large-4 medium-4 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-4.columns" />
+            <div class="large-6 medium-6 columns">
+              <label for="login_password" id="lable_login_password">密码</label>
             </div>
-            <div class="large-4 medium-4 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-4.columns" />
-            </div>
-            <div class="large-4 medium-4 columns">
-              <div class="row collapse">
-                <label>Input Label</label>
-                <div class="small-9 columns">
-                  <input type="text" placeholder="small-9.columns" />
-                </div>
-                <div class="small-3 columns">
-                  <span class="postfix">.com</span>
-                </div>
-              </div>
+            <div class="large-6 medium-6 columns">
+              <input type="text" placeholder="请输入密码" name="login_password" id="login_password"/>
             </div>
           </div>
           <div class="row">
@@ -158,6 +147,7 @@
 
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/foundation/js/foundation.min.js"></script>
+    <script src="bower_components/handlebars/handlebars.js"></script>
     <script src="js/app.js"></script>
   </body>
 </html>
