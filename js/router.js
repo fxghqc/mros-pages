@@ -1,16 +1,11 @@
+var userCtrl = require('./userCtrl.js');
+var groupCtrl = require('./groupCtrl.js');
+
 var Router = Backbone.Router.extend({
   
   routes: {
-    ':user':    'userPage',
-    ':group':   'groupPage'
-  },
-
-  user: function(user) {
-    // fetch user info and render
-  },
-
-  group: function(group) {
-    // fetch group info and render
+    ':user':    userCtrl,
+    ':group':   groupCtrl
   }
-
+  
 });
